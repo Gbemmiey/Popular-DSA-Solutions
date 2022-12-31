@@ -11,3 +11,5 @@ def two_sum(array, target):
     array.sort()
 
     return []
+
+print(two_sum([0, 1, 3, 4, 9], 5))
