@@ -6,7 +6,7 @@
 
 def two_sum(array, target):
     """This is a O(n^2) time complexity but O(1) space complexity solution to the problem.
-    This solution uses two loops to solve the problem.
+    This solution iterates twice over the input space to solve the problem.
     The function returns an empty array if there is no solution"""
     for i, value in enumerate(array):
 
@@ -14,7 +14,7 @@ def two_sum(array, target):
             iteration_sum = value + val
             if iteration_sum == target:
                 return [i, j]
-    
+
     return []
 
 
@@ -27,7 +27,7 @@ print(two_sum([0, 1, 3, 4, 9], 5))
 # for value in range(len(array)):
 
 # When using enumerate with a for loop, You use two variables to control the loop
-# The first variable declared would be the index 
+# The first variable declared would be the index
 # while the second variable is the value
 
 # In the above function: i = array[value]
